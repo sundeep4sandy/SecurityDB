@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Role</th>
+
+                </tr>
+            </thead>
+            <tbody data-bind="foreach:accounts">
+                <td data-bind="text:name"></td>
+                <td data-bind="text:phone"></td>
+                <td data-bind="text:role"></td>
+                <td><a data-bind="attr:{href:url}">Update</a></td>
+            </tbody>
+        </table>
+        </div>
+    </div>
+</div>
